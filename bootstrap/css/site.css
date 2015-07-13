@@ -95,7 +95,7 @@ a{
   text-align: center;
   line-height: 30px;
   font-size: 26px;
-  color: #3874D5;
+  color: #468add;
   padding-top: -10px;
   padding-bottom: 45px;
   background-image:url('/images/line.png');
@@ -118,13 +118,14 @@ div#myProduct {
 }
 
 
+
 div#myProduct p{
     font-family:"Microsoft YaHei";
-    line-height: 20px;
+    line-height: 25px;
     float: right;
     width: 240px;
-    font-size: 12px;
-    color: #636363;
+    font-size: 15px;
+    color: #ababab;
 }
 
 div#myProduct h3 {
@@ -132,13 +133,14 @@ div#myProduct h3 {
     float: right;
   font-size: 21px;
   text-align: left;
+    color: #636363;
   /*margin-top: 40px;*/
 }
 
 div#myProduct h5 {
     font-family:"Microsoft YaHei";
     float: right;
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     /*margin-top: 40px;*/
 }
@@ -202,15 +204,18 @@ div#myProduct p#detail-blue {
 .products .col-lg-4 h3 {
   font-size: 22px;
   text-align: center;
+    color: #636363;
 
 }
 
 .products .col-lg-4 h5 {
     font-family: "Microsoft YaHei";
-    color: #636363;
-    font-size: 16px;
+    color: #ababab;
+    font-size: 15px;
     text-align: center;
-
+}
+.products.col-lg-4 p{
+    color: #468add;
 }
 
 #web-back-ground {
@@ -219,15 +224,19 @@ div#myProduct p#detail-blue {
 
 .products p {
   text-align: left;
+    color: #ababab;
   
 }
 
 .products .col-lg-4 p#detail {
     margin-top: 60px;
-    color:#256BD9 ;
+    color: #468add;
   text-align: center;
 }
-
+/*.products.col-lg-4 a{*/
+    /*font-size: 12px;*/
+    /*color: #468add;*/
+/*}*/
 
 
 div#News-header .bg{
@@ -271,10 +280,12 @@ div#News {
   padding-bottom: 30px;
 
 }
-
+div#News h4{
+    color: #636363;
+}
 div#News p {
     width: 300px;
-    color: #636363;
+    color: #ababab;
 }
 
 div#News .row {
