@@ -107,8 +107,17 @@ a{
     text-align: center;
     font-family:"Microsoft YaHei";
     color: #636363;
+    /*width: 30%;*/
+    /*padding-left: 35%;*/
+    /*padding-right: 35%;*/
 
-
+}
+#describe
+{
+    text-align: left;
+    padding-right: 35%;
+    padding-left: 35%;
+    line-height: 25px;
 }
 
 div#myProduct {
@@ -197,13 +206,13 @@ div#myProduct p#detail-blue {
 
 .products .col-lg-4  {
   
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .products .col-lg-4 h3 {
   font-size: 22px;
-  text-align: center;
+  text-align: left;
     color: #636363;
 
 }
@@ -212,7 +221,8 @@ div#myProduct p#detail-blue {
     font-family: "Microsoft YaHei";
     color: #ababab;
     font-size: 15px;
-    text-align: center;
+    text-align: left;
+    line-height: 20px;
 }
 .products.col-lg-4 p{
     color: #468add;

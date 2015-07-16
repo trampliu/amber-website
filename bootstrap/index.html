@@ -16,6 +16,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="css/site.css" rel="stylesheet">
+    <script src="flat-ui.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -29,6 +30,19 @@
             });
         });
     </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+               $("#FuncTitle li").click(function()
+               {
+                   $("li").attr("class","");
+                   $(this).attr("class","active");
+               });
+        });
+
+    </script>
+
+
 
     <style>
         .CheckBoxClass,.RadioClass{
@@ -177,12 +191,12 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
 
-            <ul class="nav navbar-nav ">
-              <li><a href="/">首　页</a></li>
-              <li  class="active"><a href="#">产品中心</a></li>
-              <li><a href="#">公司动态</a></li>
-              <li><a href="#">意见反馈</a></li>
-              <li><a href="#">关于我们</a></li>
+            <ul class="nav navbar-nav " id="FuncTitle">
+              <li class="active"><a href="#">首　页</a></li>
+              <li ><a href="#Product">产品中心</a></li>
+              <li ><a href="#DynamicNews">公司动态</a></li>
+                <li ><a href="#AboutUs">关于我们</a></li>
+              <li ><a href="#FeedBack">意见反馈</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -190,12 +204,10 @@
                   <a href="" data-toggle="modal"data-target="#loginModal">登录</a>
               </li>
 
-              <li><a href="" data-toggle="modal"data-target="#registerModal">用户注册</a>
+              <li><a href="" data-toggle="modal"data-target="#registerModal">用户注册</a></li>
 
-
-              </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">用户中心 <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">用户中心 <b class="caret"></b></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="#">我的产品</a></li>
                   <li><a href="#">我的消息</a></li>
@@ -205,7 +217,8 @@
                   <li class="divider"></li>
                   <li><a href="#">退出登录</a></li>
                 </ul>
-              </li>  
+              </li>
+
             </ul>
         </div>
       </nav>
@@ -303,7 +316,7 @@
     </div>
 
     <div class="container products">
-        <div  class="section-header">
+        <div  class="section-header" id="Product">
          <h3>华域应用</h3>
         <img class="center-block" src="images/line.png"  width="200" height="5">
         </div>
@@ -311,26 +324,21 @@
         <div class="col-lg-4">
           <img class="center-block" src="images/logo1.png" alt="Generic placeholder image" width="90" height="90">
           <h3>人卫 3D 系统解剖学</h3>
-          <h5>聊学术,看病例，临床</h5>
-            <h5>医生成长必备。</h5>
+          <h5>聊学术,看病例，临床医生成长必备</h5>
             <h5>&nbsp;</h5>
             <p id="detail"><a class="btn btn-default button-blue" href="#" role="button">查看详情 > ></a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="center-block" src="images/logo2.png" alt="Generic placeholder image" width="90" height="90">
           <h3>人卫 3D 系统解剖学教学版</h3>
-            <h5>面向学生老师的教学软件</h5>
-            <h5>提供可信赖的医疗</h5>
-            <h5>信息和服务</h5>
+            <h5>面向学生老师的教学软件提供可信赖的医疗信息和服务</h5>
           <p id="detail"><a class="btn btn-default button-blue" href="#" role="button">查看详情 > ></a></p>
             <!--<p id="detail"><a href="#">查看详情</a></p>-->
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="center-block" src="images/logo3.png" alt="Generic placeholder image" width="90" height="90">
-          <h3>人卫 3D 系统解剖学教学版</h3>
-            <h5>面向学生老师的教学软件</h5>
-            <h5>提供可信赖的医疗</h5>
-            <h5>信息和服务</h5>
+          <h3>人卫 3D 系统解剖学学习版</h3>
+            <h5>面向学生老师的教学软件提供可信赖的医疗信息和服务</h5>
             <p id="detail"><a class="btn btn-default button-blue" href="#" role="button">查看详情 > ></a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -341,7 +349,7 @@
         <img class="center-block " src="images/bottom.png"  >
         </div>
       <div class="bg">
-        <h1>公司动态</h1>
+        <h1 id="DynamicNews">公司动态</h1>
       </div>
       <p class="header2">Dynamic News</p>
    
@@ -434,15 +442,12 @@
     </div><!-- <div  class="container" id="News"> -->
   </div> <!-- <div id="News-header"> -->
     <div  class="section-header">
-        <h3>关于我们</h3>
+        <h3 id="AboutUs">关于我们</h3>
         <img class="center-block" src="images/line.png"  width="200" height="5">
     </div>
     <div class="centerword">
-    <p>安博《3D系统解剖学（教学版）》是人民卫生出版社联合四川大学，</p>
-    <p>成都华域天府数字科技有限公司开发，具有独立自主</p>
-    <p>知识产权，致力于低成本，全方位提高解剖学教</p>
-    <p>学效率，利用三维重建技术还原人体三维</p>
-    <p>立体解剖的科研教学软件.</p>
+    <p id="describe">安博《3D系统解剖学（教学版）》是人民卫生出版社联合四川大学，成都华域天府数字科技有限公司开发，具有独立自主知识产权，致力于低成本，全方位提高解剖学教学效率，
+        利用三维重建技术还原人体三维立体解剖的科研教学软件.</p>
         <p id="detail-blue"><a class="btn btn-primary button-blue" href="#" role="button" style="width: 150px; margin-top: 20px">联合开发</a></p>
 
         <div class="container products">
@@ -468,7 +473,7 @@
             <img class="center-block" src="images/bottomline.png"  width="80px" height="5px" style="margin-bottom: 5px">
             <div style="width: 250px;background-color:#E2E2E2;height: 3px;margin: auto"></div>
           </div>
-        <h4>联系我们</h4>
+        <h4 id="FeedBack">联系我们</h4>
     </div>
 
     <div id="Contact" class="container-fluid">
