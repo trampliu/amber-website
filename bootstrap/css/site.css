@@ -112,11 +112,11 @@ a{
     /*padding-right: 35%;*/
 
 }
-#describe
+.describe
 {
     text-align: left;
-    padding-right: 35%;
-    padding-left: 35%;
+    padding-right: 30%;
+    padding-left: 30%;
     line-height: 25px;
 }
 
